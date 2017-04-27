@@ -1,13 +1,19 @@
 package com.example.brigus.starterproject;
 
+import android.support.annotation.LayoutRes;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public abstract class SingleFragmentActivity extends AppCompatActivity {
+public abstract class FragmentHostActivity extends AppCompatActivity {
 
     protected abstract Fragment createFragment();
+
+    @LayoutRes
+    protected  int getLayoutResId() {
+        return R.layout.activity_single_fragment;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

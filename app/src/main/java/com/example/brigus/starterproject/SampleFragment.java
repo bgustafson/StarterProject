@@ -10,9 +10,6 @@ import android.view.ViewGroup;
 
 public class SampleFragment extends Fragment {
 
-
-
-
     public static SampleFragment newInstance() {
         return new SampleFragment();
     }
